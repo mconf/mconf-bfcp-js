@@ -25,7 +25,11 @@
 
 ## Outbound methods (MCS-BFCP -> MCS-SIP)
 - startBfcpConnectionResponse
-
+- floorRequestStatus
+     - @param {String} conference
+     - @param {String} endpointId
+     - @param {Boolean} revoked
+     
 - floorRequest
      - @param {String} conference
      - @param {String} endpointId
