@@ -30,18 +30,20 @@
      - @param {String} endpointId
      - @param {Boolean} revoked
      
-- floorRequest
-     - @param {String} conference
-     - @param {String} endpointId
-- floorRelease
-     - @param {String} conference
-     - @param {String} endpointId
+
 
 ## Inbound and outbound events:
 - stopBfcpConnectionRequest
      - @param {String} conference           MCS conference under which the endpoint is located
      - @param {String} endpointID           Unique endpoint ID (e.g. Call-ID)
 
+- floorRequest
+     - @param {String} conference
+     - @param {String} endpointId
+- floorRelease
+     - @param {String} conference
+     - @param {String} endpointId
+     
  - stopBfcpConnectionResponse
 
 # MCS methods regarding floor management
