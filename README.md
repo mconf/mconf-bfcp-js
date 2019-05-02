@@ -22,14 +22,24 @@
      - @param {String} endpointId
      - @param {Boolean} released
 
+- allocateConnectionResources
+     - @param {String} conference           MCS conference under which the resource should be allocated
+     - @param {String} transportProtocol    Underlying protocol to be used by BFCP (UDP|TCP)
+     - @param {Object} params               Additional parameters
+
 
 ## Outbound methods (MCS-BFCP -> MCS-SIP)
 - startBfcpConnectionResponse
+
 - floorRequestStatus
      - @param {String} conference
      - @param {String} endpointId
      - @param {Boolean} revoked
-     
+
+- allocatedConnectionResources
+     - @param {String} conference           MCS conference for which the resources were allocated
+     - @param {String} transportProtocol    Underlying protocol to be used by BFCP (UDP|TCP)
+     - @param {String} localPort            The local port allocated for handling a BFCP connectiion
 
 
 ## Inbound and outbound events:
@@ -43,7 +53,7 @@
 - floorRelease
      - @param {String} conference
      - @param {String} endpointId
-     
+
  - stopBfcpConnectionResponse
 
 # MCS methods regarding floor management
